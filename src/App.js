@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import ComponentFMoodlet from "./FSC/fmoodlet";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <p>
+        The FSC moodlet indicates the state of Fuelling, Servicing and Cleaning
+        Letter Version.
+      </p>
+      <ComponentFMoodlet word="F" />
+      <ComponentFMoodlet word="S" />
+      <ComponentFMoodlet word="C" />
+      <p>
+        The FSC moodlet indicates the state of Fuelling, Servicing and Cleaning
+        in word version
+      </p>
+      <ComponentFMoodlet word="Fuelling" />
+      <ComponentFMoodlet word="Servicing" />
+      <ComponentFMoodlet word="Cleaning" disabled />
     </div>
   );
 }
